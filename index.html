@@ -1,27 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<html>
+  <head>
+    <title>Magic8Ball</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
 
-
-    <form>
-        <label for="Question">Ask a Question!</label><br>
-        <input type="text" id="Question" name="Question" value="?"><br>
-        <input type="submit" value="Submit">
-      </form>
-      
-
-
-
-    <script src="js/script.js"></script>
-
-
-
+  <body>
+    <main class="parallax">
     
-</body>
+<!--this is the form-->
+    <center>
+    <div id="userInput">
+      <input type="text" placeholder="Ask me anything..." />
+      <button id="ask">Ask!</button>
+      <p style="display: none;">Users question</p>
+      <button id="reset" style="display: none;">Try again</button>
+    </div>
+  </center>
+    <br />
+    <br />
+  <center>
+    <!--this is the image of the 8ball-->
+    <div id="answers">
+        <img src="img/magic8ball_start.png" />
+    </div>
+  </center>
+</main>  
+<!--this is the link to js-->
+    <script src="js/script.js"></script>
+  </body>
 </html>
+
